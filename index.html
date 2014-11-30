@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OMDB Fun!</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/normalize.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.css">
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+  <nav class="top-bar" data-topbar>
+    <ul class="title-area">
+      <li class="name">
+        <h1><a href="#">OMDB Fun!</a></h1>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="row">
+      <section class="small-6 columns search">
+        <form id="search" action="#">
+          <input type="search" placeholder="Search movies">
+        </form>
+        <ul class="movies"></ul>
+      </section>
+      <section class="details small-6 columns">
+        <h1 class="movie-title"></h1>
+        <img class="poster" src="" alt="">
+        <p class="plot"></p>
+      </section>
+    </div>
+  </main>
+
+</body>
+</html>
