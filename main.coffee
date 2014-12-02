@@ -5,7 +5,7 @@ $ ->
       url: "http://www.omdbapi.com/?s=#{title}"
     .done (data) ->
       movies = $.parseJSON(data)['Search']
-
+      $('.movies').html ''
       for movie in movies
         $('.movies').append "<li><a href='#' data-imdb=#{movie.imdbID}>#{movie.Title}</a></li>"
 
